@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ukr">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="../css/style.css">
+   <title>Завдання 3</title>
+</head>
+
+<body>
+   <main class="page">
+      <section class="block">
+         <div class="block__container">
+            <h1 class="block__title">Обов'язкове завдання 3</h1>
+            <div class="block__body">
+               <a href="../index.html" class="block__link">Повернутися до index.html</a>
+            </div>
+         </div>
+      </section>
+   </main>
+   <script>
+      const randomNumber = Math.floor(Math.random() * 5 + 1);
+
+      let userNumber = parseInt(prompt('Вгадайте число від 1 до 5'));
+
+      if (userNumber != randomNumber) {
+         userNumber = parseInt(prompt('Ви не вгадали. Спробуйте ще'));
+         if (userNumber != randomNumber) {
+            alert(`Ви програли! Правельна відповідь: ${randomNumber}`);
+         }
+      }
+      else {
+         alert(`Ви вгадали! Правельна відповідь: ${randomNumber}`);
+      }
+   </script>
+</body>
+
+</html>

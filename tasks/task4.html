@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ukr">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="../css/style.css">
+   <title>Завдання 4</title>
+</head>
+
+<body>
+   <main class="page">
+      <section class="block">
+         <div class="block__container">
+            <h1 class="block__title">Обов'язкове завдання 4</h1>
+            <div class="block__body">
+               <a href="../index.html" class="block__link">Повернутися до index.html</a>
+            </div>
+         </div>
+      </section>
+   </main>
+   <script>
+      const userAge = parseInt(prompt('Введіть вік людини'));
+
+      if (userAge < 5) {
+         document.write(`
+            <div class="block">
+               <div class="block__container">
+                  <p class="block__text">Це дитина у садочку</p>
+               </div>
+            </div>
+         `);
+      }
+      if (userAge >= 5 && userAge < 17) {
+         document.write(`
+            <div class="block">
+               <div class="block__container">
+                  <p class="block__text">Це школяр</p>
+               </div>
+            </div>
+         `);
+      }
+      if (userAge >= 17 && userAge <= 22) {
+         document.write(`
+            <div class="block">
+               <div class="block__container">
+                  <p class="block__text">Це студент</p>
+               </div>
+            </div>
+         `);
+      }
+      if (userAge >= 23 && userAge <= 65) {
+         document.write(`
+            <div class="block">
+               <div class="block__container">
+                  <p class="block__text">Це робітник</p>
+               </div>
+            </div>
+         `);
+      }
+      if (userAge > 65) {
+         document.write(`
+            <div class="block">
+               <div class="block__container">
+                  <p class="block__text">Це пенсіонер</p>
+               </div>
+            </div>
+         `);
+      }
+   </script>
+</body>
+
+</html>
